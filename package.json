@@ -1,0 +1,22 @@
+{
+  "name": "my-modern-website",
+  "version": "1.0.0",
+  "description": "A modern website hosted on GitHub Pages",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step can be added here'"
+  },
+  "keywords": [
+    "website",
+    "modern",
+    "github-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://yourusername.github.io/my-modern-website/"
+}
