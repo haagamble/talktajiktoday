@@ -29,10 +29,12 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 nav ul li {
     margin: 0;
+    flex: 1 1 auto; /* Allow nav items to grow/shrink */
 }
 
 nav ul li a {
@@ -42,6 +44,8 @@ nav ul li a {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background 0.2s;
+    display: block;
+    text-align: center;
 }
 
 nav ul li a:hover,
@@ -62,6 +66,9 @@ nav a:hover {
 
 main {
     padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 section {
@@ -92,3 +99,26 @@ footer {
     font-weight: 500;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
+
+/* Responsive images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive navigation and layout for small screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    main {
+        padding: 0.5rem;
+    }
+    section {
+        padding:
