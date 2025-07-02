@@ -121,4 +121,6 @@ img, video {
         padding: 0.5rem;
     }
     section {
-        padding:
+        padding: 10px;
+    }
+}
