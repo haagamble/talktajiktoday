@@ -1,57 +1,28 @@
-# My Modern Website
+# Talk Tajik Today
 
-This is a basic modern website project designed to be hosted on GitHub Pages. It includes a simple structure with HTML, CSS, and JavaScript files to create a responsive and interactive web experience.
+**Welcome to Talk Tajik Today!**   
+This site is your starting point for exploring the beautiful Tajik language. Whether you're just beginning or looking to grow your skills, you'll find hand-picked resources to help you read, listen, watch, and speak Tajik with more confidence.
 
-## Project Structure
+Think of this site as a growing toolkit for learners — built by someone who loves Tajik and wants to make it easier (and more fun!) for others to learn too.
 
-```
-my-modern-website
-├── src
-│   ├── index.html       # Main HTML document
-│   ├── styles
-│   │   └── main.css     # CSS styles for the website
-│   └── scripts
-│       └── main.js      # JavaScript for interactivity
-├── .gitignore           # Files and directories to ignore by Git
-├── package.json         # npm configuration file
-└── README.md            # Project documentation
-```
+🌐 [Visit the site](https://talktajiktoday.com)
 
-## Getting Started
+## 🔍 What's on the site?
 
-To get started with this project, follow these steps:
+You'll find:
+- 📚 Reading practice & beginner-friendly texts  
+- 🎧 Audio & video resources to improve your listening  
+- 🧠 Language games and vocabulary practice  
+- 📝 Grammar tips and learning guides  
+- 🧰 Tools, links, and recommended resources  
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/my-modern-website.git
-   cd my-modern-website
-   ```
+I'm always adding new things, so check back often!
 
-2. **Install dependencies:**
-   If you have any dependencies listed in `package.json`, run:
-   ```bash
-   npm install
-   ```
+## 💬 Why "Talk Tajik Today"?
 
-3. **Open the website:**
-   You can open `src/index.html` in your web browser to view the website.
+Because there's no better time to start than **today** — and the more you use what you know, the faster you'll grow. Every word you learn and every sentence you try brings you one step closer to fluency.
 
-## Features
-
-- Modern design with responsive layout
-- Interactive elements using JavaScript
-- Easy to customize and extend
-
-## Deployment
-
-To deploy your website on GitHub Pages:
-
-1. Push your code to a GitHub repository.
-2. Go to the repository settings.
-3. Scroll down to the "GitHub Pages" section.
-4. Select the branch you want to use for GitHub Pages (usually `main` or `gh-pages`).
-5. Your website will be available at `https://yourusername.github.io/my-modern-website`.
-
-## License
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
