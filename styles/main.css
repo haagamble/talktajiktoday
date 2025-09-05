@@ -54,21 +54,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
+    transition: padding 0.25s ease;
 }
 
-h1 {
+header h1 {
     color: #ffffff;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: font-size 0.25s ease, margin-bottom 0.25s ease;
 }
 
 @keyframes gradientShift {
@@ -97,6 +100,26 @@ h1 {
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: 300;
+    transition: opacity 0.25s ease, margin-bottom 0.25s ease;
+}
+
+/* Condensed header state */
+header.condensed .header-content {
+    padding: 0.5rem 0;
+}
+
+header.condensed h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+}
+
+header.condensed .tagline {
+    opacity: 0.85;
+    margin-bottom: 0.5rem;
+}
+
+header.hidden {
+    transform: translateY(-100%);
 }
 
 /* Navigation Styles */
@@ -117,17 +140,24 @@ nav ul li a {
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     display: inline-block;
     position: relative;
     overflow: hidden;
+    text-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.26);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+nav ul li a:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.65);
+    outline-offset: 2px;
 }
 
 /* Mobile Menu Toggle */
@@ -420,8 +450,9 @@ main.container>section {
     z-index: 2;
 }
 
+.hero h1,
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     margin-bottom: 1.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #2d3748;
@@ -787,6 +818,7 @@ video {
         display: block;
     }
 
+    .hero h1,
     .hero h2 {
         font-size: 2rem;
     }

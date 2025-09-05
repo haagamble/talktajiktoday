@@ -31,6 +31,38 @@ window.addEventListener('scroll', () => {
     scrollIndicator.style.width = scrollPercent + '%';
 });
 
+// Header condense on scroll (no auto-hide)
+(function () {
+    const header = document.querySelector('header');
+    // Use hysteresis to avoid flicker when hovering around the threshold
+    const CONDENSE_AT = 80;  // add condensed at or beyond this
+    const EXPAND_AT = 30;    // remove condensed when below this
+    let ticking = false;
+    let isCondensed = false;
+
+    function update() {
+        if (!header) { ticking = false; return; }
+        const y = window.scrollY || window.pageYOffset || 0;
+        if (!isCondensed && y >= CONDENSE_AT) {
+            header.classList.add('condensed');
+            isCondensed = true;
+        } else if (isCondensed && y <= EXPAND_AT) {
+            header.classList.remove('condensed');
+            isCondensed = false;
+        }
+        ticking = false;
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
