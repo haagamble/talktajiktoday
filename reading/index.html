@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reading | Talk Tajik Today</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
     <header>
-        <h1>Talk Tajik Today</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/audio/">Audio</a></li>
-                <li><a href="/video/">Video</a></li>
-                <li><a href="/reading/">Reading</a></li>
-                <li><a href="/dictionaries/">Dictionaries</a></li>
-                <li><a href="/grammar/">Grammar</a></li>
-                <li><a href="/lessons/">Lessons</a></li>
-                <li><a href="/interactive/">Interactive</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <h1>Talk Tajik Today</h1>
+                <p class="tagline">Reading Resources - Your gateway to mastering the beautiful Tajik language</p>
+                <nav>
+                    <ul>
+                        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a></li>
+                        <li><a href="/video/"><i class="fas fa-video"></i> Video</a></li>
+                        <li><a href="/reading/"><i class="fas fa-book"></i> Reading</a></li>
+                        <li><a href="/dictionaries/"><i class="fas fa-book-open"></i> Dictionaries</a></li>
+                        <li><a href="/grammar/"><i class="fas fa-language"></i> Grammar</a></li>
+                        <li><a href="/lessons/"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
+                        <li><a href="/interactive/"><i class="fas fa-gamepad"></i> Interactive</a></li>
+                    </ul>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="menu-toggle" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i> Menu
+                    </button>
+                </nav>
+            </div>
+        </div>
     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <h2>Navigation</h2>
+            <button class="close-menu" onclick="closeMobileMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="/" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/audio/" onclick="closeMobileMenu()"><i class="fas fa-volume-up"></i> Audio</a></li>
+            <li><a href="/video/" onclick="closeMobileMenu()"><i class="fas fa-video"></i> Video</a></li>
+            <li><a href="/reading/" onclick="closeMobileMenu()"><i class="fas fa-book"></i> Reading</a></li>
+            <li><a href="/dictionaries/" onclick="closeMobileMenu()"><i class="fas fa-book-open"></i> Dictionaries</a>
+            </li>
+            <li><a href="/grammar/" onclick="closeMobileMenu()"><i class="fas fa-language"></i> Grammar</a></li>
+            <li><a href="/lessons/" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
+            <li><a href="/interactive/" onclick="closeMobileMenu()"><i class="fas fa-gamepad"></i> Interactive</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <h1 class="text-center">Things to Read</h1>
@@ -112,9 +148,12 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Talk Tajik Today</p>
+        <div class="container">
+            <p>&copy; 2025 Talk Tajik Today - Empowering Tajik Language Learners Worldwide</p>
+        </div>
     </footer>
-    <script src="scripts/main.js"></script>
+
+    <script src="../scripts/main.js"></script>
 </body>
 
 </html>
