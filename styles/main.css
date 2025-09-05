@@ -244,15 +244,26 @@ main:not(.container) p {
 }
 
 main:not(.container) ul {
-    margin: 1rem 0 1.5rem 0;
+    margin: 0.6rem 0 1rem 0;
 }
 
 main:not(.container) li {
     color: #4b5563;
-    margin-bottom: 0.8rem;
-    line-height: 1.7;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
     font-size: 1.05rem;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Indent nested lists and tighten their spacing */
+main:not(.container) li>ul {
+    margin: 0.2rem 0 0.35rem 0;
+    padding-left: 1.25rem;
+}
+
+main:not(.container) li li {
+    margin-bottom: 0.3rem;
+    line-height: 1.45;
 }
 
 main:not(.container) .alert-info {
