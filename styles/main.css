@@ -733,8 +733,8 @@ video {
         margin-bottom: 0.8rem;
     }
 
-    /* Hide desktop nav on mobile */
-    nav ul {
+    /* Hide only the header (desktop) nav on mobile */
+    header nav ul {
         display: none;
     }
 
@@ -794,6 +794,8 @@ video {
     }
 
     .mobile-nav ul {
+        display: block;
+        /* ensure menu list is visible */
         list-style: none;
         padding: 0;
         margin: 0;
@@ -864,5 +866,22 @@ video {
     .featured-section,
     .latest-section {
         padding: 2rem 1rem;
+    }
+
+    /* Subpage titles smaller on mobile */
+    main:not(.container) h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Featured Resources heading smaller and less space above on mobile */
+    .featured-section {
+        padding: 1.25rem 1rem 2rem 1rem;
+        /* reduce top padding */
+    }
+
+    .featured-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
     }
 }
