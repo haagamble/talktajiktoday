@@ -715,17 +715,22 @@ video {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
-        padding: 1rem 0;
+        padding: 0.9rem 0;
     }
 
-    h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
+    header h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    header.condensed h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
     }
 
     .tagline {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
     }
 
     /* Hide desktop nav on mobile */
@@ -741,6 +746,7 @@ video {
 
     /* Mobile navigation menu */
     .mobile-nav {
+        display: block;
         position: fixed;
         top: 0;
         left: -100%;
@@ -829,9 +835,12 @@ video {
         display: block;
     }
 
-    .hero h1,
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .hero-subtitle {
