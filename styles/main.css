@@ -750,13 +750,15 @@ video {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 280px;
+        width: 260px;
         height: 100vh;
         background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
         z-index: 1001;
         transition: left 0.3s ease;
-        padding: 2rem 1rem;
+        padding: 1rem 0.75rem;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .mobile-nav.active {
@@ -767,8 +769,8 @@ video {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -802,18 +804,19 @@ video {
     }
 
     .mobile-nav li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
     }
 
     .mobile-nav a {
         display: block;
         color: white;
         text-decoration: none;
-        padding: 1rem;
+        padding: 0.75rem 0.75rem;
         border-radius: 8px;
         transition: all 0.3s ease;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 0.95rem;
     }
 
     .mobile-nav a:hover {
@@ -881,6 +884,16 @@ video {
     }
 
     .featured-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
+    }
+
+    /* Latest Additions matches Featured Resources on mobile */
+    .latest-section {
+        padding: 1.25rem 1rem 2rem 1rem;
+    }
+
+    .latest-section h2 {
         font-size: 1.6rem;
         margin-bottom: 1.25rem;
     }
