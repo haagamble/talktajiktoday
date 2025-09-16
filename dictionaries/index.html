@@ -2,173 +2,242 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionaries | Talk Tajik Today</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dictionaries | Talk Tajik Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-        gtag('config', 'G-T2D1H7WLC2');
-    </script>
+    gtag("config", "G-T2D1H7WLC2");
+  </script>
 </head>
 
 <body>
-    <div class="scroll-indicator" id="scrollIndicator"></div>
+  <div class="scroll-indicator" id="scrollIndicator"></div>
 
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Talk Tajik Today</h1>
-                <p class="tagline">Your hub for Tajik language learning</p>
-                <nav>
-                    <ul>
-                        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a></li>
-                        <li><a href="/video/"><i class="fas fa-video"></i> Video</a></li>
-                        <li><a href="/reading/"><i class="fas fa-book"></i> Reading</a></li>
-                        <li><a href="/dictionaries/"><i class="fas fa-book-open"></i> Dictionaries</a></li>
-                        <li><a href="/grammar/"><i class="fas fa-language"></i> Grammar</a></li>
-                        <li><a href="/lessons/"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
-                        <li><a href="/interactive/"><i class="fas fa-gamepad"></i> Interactive</a></li>
-                    </ul>
-
-                    <!-- Mobile Menu Toggle -->
-                    <button class="menu-toggle" onclick="toggleMobileMenu()">
-                        <i class="fas fa-bars"></i> Menu
-                    </button>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Navigation -->
-    <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
-    <nav class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-header">
-            <h2>Navigation</h2>
-            <button class="close-menu" onclick="closeMobileMenu()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <ul>
-            <li><a href="/" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="/audio/" onclick="closeMobileMenu()"><i class="fas fa-volume-up"></i> Audio</a></li>
-            <li><a href="/video/" onclick="closeMobileMenu()"><i class="fas fa-video"></i> Video</a></li>
-            <li><a href="/reading/" onclick="closeMobileMenu()"><i class="fas fa-book"></i> Reading</a></li>
-            <li><a href="/dictionaries/" onclick="closeMobileMenu()"><i class="fas fa-book-open"></i> Dictionaries</a>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1>Talk Tajik Today</h1>
+        <p class="tagline">Your hub for Tajik language learning</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="/"><i class="fas fa-home"></i> Home</a>
             </li>
-            <li><a href="/grammar/" onclick="closeMobileMenu()"><i class="fas fa-language"></i> Grammar</a></li>
-            <li><a href="/lessons/" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
-            <li><a href="/interactive/" onclick="closeMobileMenu()"><i class="fas fa-gamepad"></i> Interactive</a></li>
+            <li>
+              <a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a>
+            </li>
+            <li>
+              <a href="/video/"><i class="fas fa-video"></i> Video</a>
+            </li>
+            <li>
+              <a href="/reading/"><i class="fas fa-book"></i> Reading</a>
+            </li>
+            <li>
+              <a href="/dictionaries/"><i class="fas fa-book-open"></i> Dictionaries</a>
+            </li>
+            <li>
+              <a href="/grammar/"><i class="fas fa-language"></i> Grammar</a>
+            </li>
+            <li>
+              <a href="/lessons/"><i class="fas fa-graduation-cap"></i> Lessons</a>
+            </li>
+            <li>
+              <a href="/interactive/"><i class="fas fa-gamepad"></i> Interactive</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="menu-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i> Menu
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <h2>Navigation</h2>
+      <button class="close-menu" onclick="closeMobileMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul>
+      <li>
+        <a href="/" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li>
+        <a href="/audio/" onclick="closeMobileMenu()"><i class="fas fa-volume-up"></i> Audio</a>
+      </li>
+      <li>
+        <a href="/video/" onclick="closeMobileMenu()"><i class="fas fa-video"></i> Video</a>
+      </li>
+      <li>
+        <a href="/reading/" onclick="closeMobileMenu()"><i class="fas fa-book"></i> Reading</a>
+      </li>
+      <li>
+        <a href="/dictionaries/" onclick="closeMobileMenu()"><i class="fas fa-book-open"></i> Dictionaries</a>
+      </li>
+      <li>
+        <a href="/grammar/" onclick="closeMobileMenu()"><i class="fas fa-language"></i> Grammar</a>
+      </li>
+      <li>
+        <a href="/lessons/" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Lessons</a>
+      </li>
+      <li>
+        <a href="/interactive/" onclick="closeMobileMenu()"><i class="fas fa-gamepad"></i> Interactive</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1 class="text-center">Dictionaries</h1>
+      <p>
+        There are a few options; some are much better than others. Check them
+        out, and find the one that works best for you.
+      </p>
+      <p>
+        Bilingual dictionaries are translation dictionaries from one language
+        to another. Monolingual dictionaries, also called native dictionaries,
+        define words in the native language. Once you get used to using a
+        monolingual dictionary, you will likely find it a better resource than
+        a translation dictionary.
+      </p>
+      <h2>Bilingual</h2>
+      <section class="resource-section">
+        <h3>Online bilingual dictionaries</h3>
+        <ul>
+          <li>
+            <a href="http://www.lugat.tj" target="_blank">Луғат</a> online
+            dictionary with over 4000 words.
+          </li>
+          <li>
+            <a href="http://glosbe.com/en/tg" target="_blank">Glosbe</a> online
+            dictionary. English-Tajik and Tajik-English. This is a collaborative
+            dictionary. You can even log in and add words and phrases to it.
+          </li>
+          <li>
+            <a href="https://sahifa.tj/anglo_tadzhikskij.aspx" target="_blank">Sahifa English-Tajik</a>
+            online dictionary. 25000 words
+            <a href="https://sahifa.tj/tadzhiksko_anglijskij.aspx" target="_blank">Sahifa Tajik-English</a>
+            online dictionary. 35000 words
+          </li>
+          <li>
+            <a href="http://zabon.do.am/tj2en.html" target="_blank">Basic dictionary</a>
+            online single webpage that you can scroll down. English - Tajik
+          </li>
         </ul>
-    </nav>
-    <main>
-        <section>
-            <h1 class="text-center">Dictionaries</h1>
-            <p>There are a few options; some are much better than others. Check them out, and find the one that works
-                best for you.
-            </p>
-            <p>Bilingual dictionaries are translation dictionaries from one language to another. Monolingual
-                dictionaries, also
-                called native dictionaries, define words in the native language. Once you get used to using a
-                monolingual
-                dictionary, you will likely find it a better resource than a translation dictionary.</p>
-            <h2>Bilingual</h2>
-            <h3>Online bilingual dictionaries</h3>
-            <ul>
-                <li><a href="http://www.lugat.tj" target="_blank">Луғат</a> online dictionary with over 4000 words.
-                </li>
-                <li><a href="http://glosbe.com/en/tg" target="_blank">Glosbe</a> online dictionary. English-Tajik and
-                    Tajik-English.
-                    This is a collaborative dictionary. You can even log in and add words and phrases to it.</li>
-                <li><a href="https://sahifa.tj/anglo_tadzhikskij.aspx" target="_blank">Sahifa English-Tajik</a> online
-                    dictionary.
-                    25000 words <a href="https://sahifa.tj/tadzhiksko_anglijskij.aspx" target="_blank">Sahifa
-                        Tajik-English</a>
-                    online dictionary. 35000 words</li>
-                <li><a href="http://zabon.do.am/tj2en.html" target="_blank">Basic dictionary</a> online single webpage
-                    that you can
-                    scroll down. English - Tajik</li>
-            </ul>
 
-            <h3>Bilingual dictionary apps</h3>
-            <ul>
-                <li>Globse: This app gives examples of how to use the word in a sentence. <a
-                        href="https://apps.apple.com/us/app/glosbe-dictionary/id1240097549" target="_blank">Apple</a>
-                    and <a href="https://play.google.com/store/apps/details?id=com.glosbe.dict"
-                        target="_blank">Android</a> </li>
-                <li>Tajik-English Dictionary: Basic dictionary. <a
-                        href="https://play.google.com/store/apps/details?id=com.fa.dictionary.english.tg&hl=en_CA">Android</a>
-                    and
-                    <a href="https://apps.apple.com/ru/app/tajik-english-dictionary/id6450926308">Apple</a>
-            </ul>
+        <h3>Bilingual dictionary apps</h3>
+        <ul>
+          <li>
+            Globse: This app gives examples of how to use the word in a
+            sentence.
+            <a href="https://apps.apple.com/us/app/glosbe-dictionary/id1240097549" target="_blank">Apple</a>
+            and
+            <a href="https://play.google.com/store/apps/details?id=com.glosbe.dict" target="_blank">Android</a>
+          </li>
+          <li>
+            Tajik-English Dictionary: Basic dictionary.
+            <a href="https://play.google.com/store/apps/details?id=com.fa.dictionary.english.tg&hl=en_CA">Android</a>
+            and
+            <a href="https://apps.apple.com/ru/app/tajik-english-dictionary/id6450926308">Apple</a>
+          </li>
+        </ul>
 
-            <h3>Online translation</h3>
-            <ul>
-                <li><a href="https://translate.google.com/?sl=en&tl=tg&op=translate">Google translate</a>
-                </li>
-                <li><a href="https://translate.yandex.com/en/?source_lang=en&target_lang=tg&text=I%20love%20learning%20Tajik"
-                        target="_blank">Yandex translate</a> is similar to Google translate, but often gives a different
-                    translation.</li>
-                <li><a href="https://chatgpt.com/" target="_blank">Chat GPT</a> Enter your English text, and then ask
-                    for the Tajik translation.</li>
-                <li><a href="https://tajik.english-dictionary.help/">English Dictionary.help</a> This one is better for
-                    Tajiks who are learning English. There are lots of examples for how to use the English word.</li>
-            </ul>
+        <h3>Online translation</h3>
+        <ul>
+          <li>
+            <a href="https://translate.google.com/?sl=en&tl=tg&op=translate">Google translate</a>
+          </li>
+          <li>
+            <a href="https://translate.yandex.com/en/?source_lang=en&target_lang=tg&text=I%20love%20learning%20Tajik"
+              target="_blank">Yandex translate</a>
+            is similar to Google translate, but often gives a different
+            translation.
+          </li>
+          <li>
+            <a href="https://chatgpt.com/" target="_blank">Chat GPT</a> Enter
+            your English text, and then ask for the Tajik translation.
+          </li>
+          <li>
+            <a href="https://tajik.english-dictionary.help/">English Dictionary.help</a>
+            This one is better for Tajiks who are learning English. There are
+            lots of examples for how to use the English word.
+          </li>
+        </ul>
 
-            <h3>Word lists</h3>
-            <ul>
-                <li><a href="../documents/MostCommonVerbs.pdf" target="_blank">Most Common Verbs</a> is a PDF with about
-                    100 verbs.
-                </li>
-                <li><a href="http://learn101.org/tajik.php" target="_blank">Learn Tajik</a>  has some word lists.</li>
-            </ul>
+        <h3>Word lists</h3>
+        <ul>
+          <li>
+            <a href="../documents/MostCommonVerbs.pdf" target="_blank">Most Common Verbs</a>
+            is a PDF with about 100 verbs.
+          </li>
+          <li>
+            <a href="http://learn101.org/tajik.php" target="_blank">Learn Tajik</a>  has some word lists.
+          </li>
+        </ul>
 
-            <h2>Monolingual</h2>
-            <h3>Online monolingual Tajik dictionaries</h3>
+        <h2>Monolingual</h2>
+        <h3>Online monolingual Tajik dictionaries</h3>
+        <ul>
+          <li>
+            <a href="https://vazhaju.tj/search/ассалом" target="_blank">Вожаҷӯ</a>
+            online Tajik-Tajik dictionary. This is a good one. It will tell you
+            what part of speech the word is, show synonyms and give examples of
+            how the word is used. Try a search for дил (heart) to see how
+            helpful this dictionary is.
+          </li>
+        </ul>
+        <h3>Monolingual Tajik dictionary PDF</h3>
+        <ul>
+          <li>
+            You can download these PDFs, but you can also use them online. Use
+            the Find tool in your web browser to search for words.
             <ul>
-                <li><a href="https://vazhaju.tj/search/ассалом" target="_blank">Вожаҷӯ</a> online Tajik-Tajik
-                    dictionary. This is a
-                    good one. It will tell you what part of speech the word is, show synonyms and give examples of how
-                    the word is
-                    used. Try a search for дил (heart) to see how helpful this dictionary is. </li>
+              <li>
+                <a href="https://ravshanfikr.tj/lu-atnoma-o.raw?task=download&fid=133" target="_blank">Фарҳангӣ Тафсирии
+                  Забони Тоҷикӣ, Part 1 (А-Н)</a>
+                - 950 page PDF
+              </li>
+              <li>
+                <a href="https://ravshanfikr.tj/lu-atnoma-o.raw?task=download&fid=222" target="_blank">Фарҳангӣ Тафсирии
+                  Забони Тоҷикӣ, Part 2 (О-Я)</a>
+                - 945 page PDF
+              </li>
             </ul>
-            <h3>Monolingual Tajik dictionary PDF</h3>
-            <ul>
-                <li> You can download these PDFs, but you can also use them online. Use the Find tool in your web
-                    browser to search
-                    for words.
-                    <ul>
-                        <li><a href="https://ravshanfikr.tj/lu-atnoma-o.raw?task=download&fid=133"
-                                target="_blank">Фарҳангӣ Тафсирии
-                                Забони Тоҷикӣ, Part 1 (А-Н)</a> - 950 page PDF </li>
-                        <li><a href="https://ravshanfikr.tj/lu-atnoma-o.raw?task=download&fid=222"
-                                target="_blank">Фарҳангӣ Тафсирии
-                                Забони Тоҷикӣ, Part 2 (О-Я)</a> - 945 page PDF</li>
-                    </ul>
-                </li>
-            </ul>
+          </li>
+        </ul>
 
-            <h3>Other</h3>
-            <ul>
-                <li><a href="https://t.me/vazhaju_bot" target="_blank">Вожаҷӯ</a> Monolingual Tajik Telegram bot</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Talk Tajik Today - Empowering Tajik Language Learners Worldwide</p>
-        </div>
-    </footer>
+        <h3>Other</h3>
+        <ul>
+          <li>
+            <a href="https://t.me/vazhaju_bot" target="_blank">Вожаҷӯ</a>
+            Monolingual Tajik Telegram bot
+          </li>
+        </ul>
+      </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Talk Tajik Today</p>
+    </div>
+  </footer>
 
-    <script src="../scripts/main.js"></script>
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>

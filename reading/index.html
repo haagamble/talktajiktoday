@@ -1,170 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reading | Talk Tajik Today</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-T2D1H7WLC2");
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading | Talk Tajik Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <div class="scroll-indicator" id="scrollIndicator"></div>
+    gtag("config", "G-T2D1H7WLC2");
+  </script>
+</head>
 
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <h1>Talk Tajik Today</h1>
-          <p class="tagline">Your hub for Tajik language learning</p>
-          <nav>
-            <ul>
-              <li>
-                <a href="/"><i class="fas fa-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a>
-              </li>
-              <li>
-                <a href="/video/"><i class="fas fa-video"></i> Video</a>
-              </li>
-              <li>
-                <a href="/reading/"><i class="fas fa-book"></i> Reading</a>
-              </li>
-              <li>
-                <a href="/dictionaries/"
-                  ><i class="fas fa-book-open"></i> Dictionaries</a
-                >
-              </li>
-              <li>
-                <a href="/grammar/"><i class="fas fa-language"></i> Grammar</a>
-              </li>
-              <li>
-                <a href="/lessons/"
-                  ><i class="fas fa-graduation-cap"></i> Lessons</a
-                >
-              </li>
-              <li>
-                <a href="/interactive/"
-                  ><i class="fas fa-gamepad"></i> Interactive</a
-                >
-              </li>
-            </ul>
+<body>
+  <div class="scroll-indicator" id="scrollIndicator"></div>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="menu-toggle" onclick="toggleMobileMenu()">
-              <i class="fas fa-bars"></i> Menu
-            </button>
-          </nav>
-        </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1>Talk Tajik Today</h1>
+        <p class="tagline">Your hub for Tajik language learning</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="/"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a>
+            </li>
+            <li>
+              <a href="/video/"><i class="fas fa-video"></i> Video</a>
+            </li>
+            <li>
+              <a href="/reading/"><i class="fas fa-book"></i> Reading</a>
+            </li>
+            <li>
+              <a href="/dictionaries/"><i class="fas fa-book-open"></i> Dictionaries</a>
+            </li>
+            <li>
+              <a href="/grammar/"><i class="fas fa-language"></i> Grammar</a>
+            </li>
+            <li>
+              <a href="/lessons/"><i class="fas fa-graduation-cap"></i> Lessons</a>
+            </li>
+            <li>
+              <a href="/interactive/"><i class="fas fa-gamepad"></i> Interactive</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="menu-toggle" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i> Menu
+          </button>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Mobile Navigation -->
-    <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
-    <nav class="mobile-nav" id="mobileNav">
-      <div class="mobile-nav-header">
-        <h2>Navigation</h2>
-        <button class="close-menu" onclick="closeMobileMenu()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <ul>
-        <li>
-          <a href="/" onclick="closeMobileMenu()"
-            ><i class="fas fa-home"></i> Home</a
-          >
-        </li>
-        <li>
-          <a href="/audio/" onclick="closeMobileMenu()"
-            ><i class="fas fa-volume-up"></i> Audio</a
-          >
-        </li>
-        <li>
-          <a href="/video/" onclick="closeMobileMenu()"
-            ><i class="fas fa-video"></i> Video</a
-          >
-        </li>
-        <li>
-          <a href="/reading/" onclick="closeMobileMenu()"
-            ><i class="fas fa-book"></i> Reading</a
-          >
-        </li>
-        <li>
-          <a href="/dictionaries/" onclick="closeMobileMenu()"
-            ><i class="fas fa-book-open"></i> Dictionaries</a
-          >
-        </li>
-        <li>
-          <a href="/grammar/" onclick="closeMobileMenu()"
-            ><i class="fas fa-language"></i> Grammar</a
-          >
-        </li>
-        <li>
-          <a href="/lessons/" onclick="closeMobileMenu()"
-            ><i class="fas fa-graduation-cap"></i> Lessons</a
-          >
-        </li>
-        <li>
-          <a href="/interactive/" onclick="closeMobileMenu()"
-            ><i class="fas fa-gamepad"></i> Interactive</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <section>
-        <h1 class="text-center">Things to Read</h1>
-        <p>
-          Please note that some of these links may only be accessible when
-          browsing from within Tajikistan.
-        </p>
+  <!-- Mobile Navigation -->
+  <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <h2>Navigation</h2>
+      <button class="close-menu" onclick="closeMobileMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul>
+      <li>
+        <a href="/" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li>
+        <a href="/audio/" onclick="closeMobileMenu()"><i class="fas fa-volume-up"></i> Audio</a>
+      </li>
+      <li>
+        <a href="/video/" onclick="closeMobileMenu()"><i class="fas fa-video"></i> Video</a>
+      </li>
+      <li>
+        <a href="/reading/" onclick="closeMobileMenu()"><i class="fas fa-book"></i> Reading</a>
+      </li>
+      <li>
+        <a href="/dictionaries/" onclick="closeMobileMenu()"><i class="fas fa-book-open"></i> Dictionaries</a>
+      </li>
+      <li>
+        <a href="/grammar/" onclick="closeMobileMenu()"><i class="fas fa-language"></i> Grammar</a>
+      </li>
+      <li>
+        <a href="/lessons/" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Lessons</a>
+      </li>
+      <li>
+        <a href="/interactive/" onclick="closeMobileMenu()"><i class="fas fa-gamepad"></i> Interactive</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h1 class="text-center">Things to Read</h1>
+      <p>
+        Please note that some of these links may only be accessible when
+        browsing from within Tajikistan.
+      </p>
+      <section class="resource-section">
         <h3>Tajik Websites</h3>
         <ul>
           <li>
-            <a href="http://tg.wikipedia.org/wiki/Саҳифаи_Аслӣ" target="_blank"
-              >Wikipedia</a
-            >
+            <a href="http://tg.wikipedia.org/wiki/Саҳифаи_Аслӣ" target="_blank">Wikipedia</a>
             - articles in Tajik
           </li>
           <li>
-            <a
-              href="https://osorkhonaimilliidip.tj/collections/"
-              target="_blank"
-              >Осорхонаи Миллии Тоҷикистон</a
-            >
+            <a href="https://osorkhonaimilliidip.tj/collections/" target="_blank">Осорхонаи Миллии Тоҷикистон</a>
             - National Museum of Tajikistan
           </li>
 
           <li>
-            <a
-              href="https://latifatj.wordpress.com/дӯстони-одамизод/"
-              target="_blank"
-              >Latifa</a
-            >
+            <a href="https://latifatj.wordpress.com/дӯстони-одамизод/" target="_blank">Latifa</a>
             - some jokes in Tajik.
           </li>
         </ul>
+      </section>
+
+      <section class="resource-section">
         <h3>Tajikistan News sites</h3>
         <ul>
           <li>
@@ -175,103 +139,74 @@
             <a href="https://jumhuriyat.tj/" target="_blank">Ҷумҳурият</a>
           </li>
           <li>
-            <a href="https://tajikistantimes.tj/" target="_blank"
-              >Tajikistan Times</a
-            >
+            <a href="https://tajikistantimes.tj/" target="_blank">Tajikistan Times</a>
           </li>
         </ul>
+      </section>
 
+      <section class="resource-section">
         <h3>Texts for Tajik Language Learning</h3>
         <ul>
           <li>
-            <a
-              href="https://open.umn.edu/opentextbooks/textbooks/tajik-persian-readings-in-history-culture-and-society"
-              target="_blank"
-              >Tajik Persian: Readings in History, Culture and Society</a
-            >
+            <a href="https://open.umn.edu/opentextbooks/textbooks/tajik-persian-readings-in-history-culture-and-society"
+              target="_blank">Tajik Persian: Readings in History, Culture and Society</a>
             - textbook to help Tajik language learners to develop reading
             fluency, by Razi Ahmad. Book can be downloaded as a PDF
           </li>
         </ul>
+      </section>
+
+      <section class="resource-section">
         <h3>Tajik School Textbooks</h3>
         Some books on these sites are the same.
         <ul>
           <li>
-            <a
-              href="https://library.maktab2030.tj/core/resources"
-              target="_blank"
-              >Library 2030</a
-            >: This is the Department of Education site for library books. There
+            <a href="https://library.maktab2030.tj/core/resources" target="_blank">Library 2030</a>: This is the
+            Department of Education site for library books. There
             are textbooks in all subjects. To find stories, apply the filters
             интихоби забон: тоҷикӣ and мавзӯҳо: афсона. Here are a few.
             <ul>
               <li>
-                <a
-                  href="https://library.maktab2030.tj/core/resources/94c9c263-13c8-4a7d-9141-55ffd84139c3/open"
-                  target="_blank"
-                  >Бузаки Ҷингилапо </a
-                >(PDF). The curly-footed Kid Goat.
+                <a href="https://library.maktab2030.tj/core/resources/94c9c263-13c8-4a7d-9141-55ffd84139c3/open"
+                  target="_blank">Бузаки Ҷингилапо </a>(PDF). The curly-footed Kid Goat.
               </li>
               <li>
-                <a
-                  href="https://library.maktab2030.tj/core/resources/94c799d5-6dde-4a56-bc4f-4009c1daf857/open"
-                  target="_blank"
-                  >Моҳича ва Қурбоққа</a
-                >
+                <a href="https://library.maktab2030.tj/core/resources/94c799d5-6dde-4a56-bc4f-4009c1daf857/open"
+                  target="_blank">Моҳича ва Қурбоққа</a>
                 (PDF). The little Fish and the Frog. This one is in Tajik and
                 English.
               </li>
               <li>
-                <a
-                  href="https://library.maktab2030.tj/core/resources/94cb1a14-26d9-4784-98ff-3074c2fff6f1/open"
-                  target="_blank"
-                  >Зоғак ва Ғозак</a
-                >, (PDF). The little Crow and the little Goose.
+                <a href="https://library.maktab2030.tj/core/resources/94cb1a14-26d9-4784-98ff-3074c2fff6f1/open"
+                  target="_blank">Зоғак ва Ғозак</a>, (PDF). The little Crow and the little Goose.
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="http://kitobkhona.narod.ru/index1.html" target="_blank"
-              >Library of Tajik textbooks</a
-            >: From this website you can download textbooks from grades 1 to 11
+            <a href="http://kitobkhona.narod.ru/index1.html" target="_blank">Library of Tajik textbooks</a>: From this
+            website you can download textbooks from grades 1 to 11
             in all subjects.
             <ul>
               <li>
                 Intermediate learners - try grade 2
-                <a
-                  href="https://kitobkhona.narod.ru/2/Sanat_va_Mehnat_2_1_51.pdf"
-                  target="_blank"
-                  >Санъат ва меҳнат (PDF)</a
-                >
+                <a href="https://kitobkhona.narod.ru/2/Sanat_va_Mehnat_2_1_51.pdf" target="_blank">Санъат ва меҳнат
+                  (PDF)</a>
                 or
-                <a
-                  href="https://kitobkhona.narod.ru/2/Matematika_2_1_53.pdf"
-                  target="_blank"
-                  >Математика (PDF)</a
-                >.
+                <a href="https://kitobkhona.narod.ru/2/Matematika_2_1_53.pdf" target="_blank">Математика (PDF)</a>.
               </li>
               <li>
                 Advanced learners - how about grade 6
-                <a
-                  href="https://kitobkhona.narod.ru/6/Geografiya_6_1_65.pdf"
-                  target="_blank"
-                  >География (PDF)</a
-                >
+                <a href="https://kitobkhona.narod.ru/6/Geografiya_6_1_65.pdf" target="_blank">География (PDF)</a>
                 or grade 9
-                <a
-                  href="https://kitobkhona.narod.ru/9/Biologiya_9.pdf"
-                  target="_blank"
-                  >Биология (PDF)</a
-                >?
+                <a href="https://kitobkhona.narod.ru/9/Biologiya_9.pdf" target="_blank">Биология (PDF)</a>?
               </li>
             </ul>
           </li>
 
           <li>
-            <a href="http://kitobkhona.tj/kitobhoidarsi.html" target="_blank"
-              >Tajik textbooks</a
-            >: This is the new site for the public library, and you can also
+            <a href="http://kitobkhona.tj/kitobhoidarsi.html" target="_blank">Tajik textbooks</a>: This is the new site
+            for the public library, and you can also
             download textbooks from here.
           </li>
           <!-- These sites aren't working right now (Sept 2025). Check again later.     
@@ -279,78 +214,63 @@
                     of the same
                     books, but there are more books and they are arranged by subject rather than by grade.</li> -->
         </ul>
+      </section>
+
+      <section class="resource-section">
         <h3>Tajik books</h3>
         <ul>
           <li>
-            <a
-              href="https://kitabi-knigi.com/en/media/?language=tg"
-              target="_blank"
-              >Over 30 Tajik books</a
-            >
+            <a href="https://kitabi-knigi.com/en/media/?language=tg" target="_blank">Over 30 Tajik books</a>
             that have been translated from English into Tajik. Examples include:
             <ul>
               <li>
-                <a
-                  href="https://kitabi-knigi.com/files/more-than-a-carpenter--tg.pdf"
-                  target="_blank"
-                  >More than a Carpenter</a
-                >
+                <a href="https://kitabi-knigi.com/files/more-than-a-carpenter--tg.pdf" target="_blank">More than a
+                  Carpenter</a>
                 (PDF), by Josh McDowell
               </li>
               <li>
-                <a
-                  href="https://kitabi-knigi.com/files/light-in-the-darkness--tg.pdf"
-                  target="_blank"
-                  >Star of Light</a
-                >
+                <a href="https://kitabi-knigi.com/files/light-in-the-darkness--tg.pdf" target="_blank">Star of Light</a>
                 (PDF), by Patricia St. John, comic book
               </li>
             </ul>
           </li>
           <li>
-            <a href="http://kitobkhona.tj/badei.html" target="_blank"
-              >Tajik fiction</a
-            >: From the public library. Tajik works of fiction that can be
+            <a href="http://kitobkhona.tj/badei.html" target="_blank">Tajik fiction</a>: From the public library. Tajik
+            works of fiction that can be
             downloaded as PDFs.
           </li>
           <li>
-            <a href="https://www.bible.com/bible/1152/MAT.1.KMO" target="_blank"
-              >Tajik Bible</a
-            >. Read or listen online.
+            <a href="https://www.bible.com/bible/1152/MAT.1.KMO" target="_blank">Tajik Bible</a>. Read or listen online.
           </li>
           <li>
-            <a href="https://ibtrussia.org/index.php/Tajik" target="_blank"
-              >Electronic Bible Publications</a
-            >. Links to ebooks and apps.
+            <a href="https://ibtrussia.org/index.php/Tajik" target="_blank">Electronic Bible Publications</a>. Links to
+            ebooks and apps.
           </li>
         </ul>
+      </section>
+
+      <section class="resource-section">
         <h3>Other</h3>
         <ul>
           <li>
-            <a href="http://kitobkhona.tj/insho.html" target="_blank">Essays</a
-            >: The public library has a collection of short essays including
+            <a href="http://kitobkhona.tj/insho.html" target="_blank">Essays</a>: The public library has a collection of
+            short essays including
             short autobiographies of famous Tajik people.
           </li>
           <li>
-            <a
-              href="https://www.ted.com/talks?sort=relevance&language=tajik"
-              target="_blank"
-              >TED Talks</a
-            >
+            <a href="https://www.ted.com/talks?sort=relevance&language=tajik" target="_blank">TED Talks</a>
             - English with Tajik subtitles.
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
-      <div class="container">
-        <p>
-          &copy; 2025 Talk Tajik Today - Empowering Tajik Language Learners
-          Worldwide
-        </p>
-      </div>
-    </footer>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Talk Tajik Today</p>
+    </div>
+  </footer>
 
-    <script src="../scripts/main.js"></script>
-  </body>
+  <script src="../scripts/main.js"></script>
+</body>
+
 </html>

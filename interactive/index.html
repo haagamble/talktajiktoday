@@ -1,107 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive | Talk Tajik Today</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T2D1H7WLC2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-T2D1H7WLC2');
+      gtag("config", "G-T2D1H7WLC2");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="scroll-indicator" id="scrollIndicator"></div>
 
     <header>
-        <div class="container">
-            <div class="header-content">
-                <h1>Talk Tajik Today</h1>
-                <p class="tagline">Your hub for Tajik language learning</p>
-                <nav>
-                    <ul>
-                        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a></li>
-                        <li><a href="/video/"><i class="fas fa-video"></i> Video</a></li>
-                        <li><a href="/reading/"><i class="fas fa-book"></i> Reading</a></li>
-                        <li><a href="/dictionaries/"><i class="fas fa-book-open"></i> Dictionaries</a></li>
-                        <li><a href="/grammar/"><i class="fas fa-language"></i> Grammar</a></li>
-                        <li><a href="/lessons/"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
-                        <li><a href="/interactive/"><i class="fas fa-gamepad"></i> Interactive</a></li>
-                    </ul>
+      <div class="container">
+        <div class="header-content">
+          <h1>Talk Tajik Today</h1>
+          <p class="tagline">Your hub for Tajik language learning</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="/audio/"><i class="fas fa-volume-up"></i> Audio</a>
+              </li>
+              <li>
+                <a href="/video/"><i class="fas fa-video"></i> Video</a>
+              </li>
+              <li>
+                <a href="/reading/"><i class="fas fa-book"></i> Reading</a>
+              </li>
+              <li>
+                <a href="/dictionaries/"
+                  ><i class="fas fa-book-open"></i> Dictionaries</a
+                >
+              </li>
+              <li>
+                <a href="/grammar/"><i class="fas fa-language"></i> Grammar</a>
+              </li>
+              <li>
+                <a href="/lessons/"
+                  ><i class="fas fa-graduation-cap"></i> Lessons</a
+                >
+              </li>
+              <li>
+                <a href="/interactive/"
+                  ><i class="fas fa-gamepad"></i> Interactive</a
+                >
+              </li>
+            </ul>
 
-                    <!-- Mobile Menu Toggle -->
-                    <button class="menu-toggle" onclick="toggleMobileMenu()">
-                        <i class="fas fa-bars"></i> Menu
-                    </button>
-                </nav>
-            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" onclick="toggleMobileMenu()">
+              <i class="fas fa-bars"></i> Menu
+            </button>
+          </nav>
         </div>
+      </div>
     </header>
 
     <!-- Mobile Navigation -->
     <div class="overlay" id="overlay" onclick="closeMobileMenu()"></div>
     <nav class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-header">
-            <h2>Navigation</h2>
-            <button class="close-menu" onclick="closeMobileMenu()">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <ul>
-            <li><a href="/" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="/audio/" onclick="closeMobileMenu()"><i class="fas fa-volume-up"></i> Audio</a></li>
-            <li><a href="/video/" onclick="closeMobileMenu()"><i class="fas fa-video"></i> Video</a></li>
-            <li><a href="/reading/" onclick="closeMobileMenu()"><i class="fas fa-book"></i> Reading</a></li>
-            <li><a href="/dictionaries/" onclick="closeMobileMenu()"><i class="fas fa-book-open"></i> Dictionaries</a>
-            </li>
-            <li><a href="/grammar/" onclick="closeMobileMenu()"><i class="fas fa-language"></i> Grammar</a></li>
-            <li><a href="/lessons/" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Lessons</a></li>
-            <li><a href="/interactive/" onclick="closeMobileMenu()"><i class="fas fa-gamepad"></i> Interactive</a></li>
-        </ul>
+      <div class="mobile-nav-header">
+        <h2>Navigation</h2>
+        <button class="close-menu" onclick="closeMobileMenu()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a href="/" onclick="closeMobileMenu()"
+            ><i class="fas fa-home"></i> Home</a
+          >
+        </li>
+        <li>
+          <a href="/audio/" onclick="closeMobileMenu()"
+            ><i class="fas fa-volume-up"></i> Audio</a
+          >
+        </li>
+        <li>
+          <a href="/video/" onclick="closeMobileMenu()"
+            ><i class="fas fa-video"></i> Video</a
+          >
+        </li>
+        <li>
+          <a href="/reading/" onclick="closeMobileMenu()"
+            ><i class="fas fa-book"></i> Reading</a
+          >
+        </li>
+        <li>
+          <a href="/dictionaries/" onclick="closeMobileMenu()"
+            ><i class="fas fa-book-open"></i> Dictionaries</a
+          >
+        </li>
+        <li>
+          <a href="/grammar/" onclick="closeMobileMenu()"
+            ><i class="fas fa-language"></i> Grammar</a
+          >
+        </li>
+        <li>
+          <a href="/lessons/" onclick="closeMobileMenu()"
+            ><i class="fas fa-graduation-cap"></i> Lessons</a
+          >
+        </li>
+        <li>
+          <a href="/interactive/" onclick="closeMobileMenu()"
+            ><i class="fas fa-gamepad"></i> Interactive</a
+          >
+        </li>
+      </ul>
     </nav>
     <main>
-        <section>
-            <h1 class="text-center">Interactive</h1>
-            <p>Interactive resources to help you learn Tajik. Click, explore, and play away.</p>
-            <h3>Vocab</h3>
-            <ul>
-                <li><a href="https://games.talktajiktoday.com/" target="_blank">Tajik first 1000 words</a> - Four
-                    activities
-                    to help you learn the first 1000 words.</li>
-                <li><a href="https://claude.ai/public/artifacts/558f7c93-6a5c-46dc-a587-1d0f515f303d?fullscreen=true"
-                        target="_blank">First 100 words practice</a> - A simple flash card app for practicing the first
-                    100 words.</li>
-                <li><a href="https://talktajiktoday.com/interactive/multiple-choice-quiz/" target="_blank">First 100
-                        words quiz</a> - Take a 20-question multiple choice quiz on the first
-                    100 words.</li>
-                <li><a href="https://talktajiktoday.com/interactive/verb-matching/" target="_blank">Verb Matching</a> -
-                    Play a matching game as you learn 110 verbs.</li>
-
-            </ul>
-            <h3>Games</h3>
-            <ul>
-                <li><a href="https://tajik-wordle.netlify.app/" target="_blank">Tajik Wordle</a> - Like Wordle, but in
-                    Tajik. Can you guess the daily 5-letter word in 6 tries?</li>
-            </ul>
-        </section>
+      <section>
+        <h1 class="text-center">Interactive</h1>
+        <p>
+          Interactive resources to help you learn Tajik. Click, explore, and
+          play away.
+        </p>
+        <h3>Vocab</h3>
+        <ul>
+          <li>
+            <a href="https://games.talktajiktoday.com/" target="_blank"
+              >Tajik first 1000 words</a
+            >
+            - Four activities to help you learn the first 1000 words.
+          </li>
+          <li>
+            <a
+              href="https://claude.ai/public/artifacts/558f7c93-6a5c-46dc-a587-1d0f515f303d?fullscreen=true"
+              target="_blank"
+              >First 100 words practice</a
+            >
+            - A simple flash card app for practicing the first 100 words.
+          </li>
+          <li>
+            <a
+              href="https://talktajiktoday.com/interactive/multiple-choice-quiz/"
+              target="_blank"
+              >First 100 words quiz</a
+            >
+            - Take a 20-question multiple choice quiz on the first 100 words.
+          </li>
+          <li>
+            <a
+              href="https://talktajiktoday.com/interactive/verb-matching/"
+              target="_blank"
+              >Verb Matching</a
+            >
+            - Play a matching game as you learn 110 verbs.
+          </li>
+        </ul>
+        <h3>Games</h3>
+        <ul>
+          <li>
+            <a href="https://tajik-wordle.netlify.app/" target="_blank"
+              >Tajik Wordle</a
+            >
+            - Like Wordle, but in Tajik. Can you guess the daily 5-letter word
+            in 6 tries?
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Talk Tajik Today - Empowering Tajik Language Learners Worldwide</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Talk Tajik Today</p>
+      </div>
     </footer>
 
     <script src="../scripts/main.js"></script>
-</body>
-
+  </body>
 </html>
